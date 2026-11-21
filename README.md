@@ -56,3 +56,7 @@ Python 3.10+, `cloudflared`, an Instagram professional account in a Meta busines
 a Meta app with `instagram_basic` + `instagram_content_publish`. API limit: 100 posts per 24 h.
 
 Only post videos you have the rights to.
+
+## License
+
+MIT, see [LICENSE](LICENSE).

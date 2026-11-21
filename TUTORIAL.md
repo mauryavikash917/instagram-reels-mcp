@@ -16,7 +16,7 @@ You will need:
 ## 1. Install
 
 ```bash
-git clone <this-repo-url> instagram-reels-mcp
+git clone https://github.com/mauryavikash917/instagram-reels-mcp.git
 cd instagram-reels-mcp
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
