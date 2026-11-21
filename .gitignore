@@ -1,0 +1,12 @@
+# local environment and runtime files
+.venv/
+__pycache__/
+*.pyc
+post.log
+.post.lock
+*.tmp
+# never commit tokens or your real schedule
+token
+*.token
+schedule.json
+.DS_Store

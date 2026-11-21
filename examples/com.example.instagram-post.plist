@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- macOS timer: posts the next Reel at 12:00, 18:00 and 21:00 local time.
+     Replace every /ABSOLUTE/PATH and the IG_USER_ID, save as
+     ~/Library/LaunchAgents/com.example.instagram-post.plist, then:
+     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.example.instagram-post.plist -->
+<plist version="1.0"><dict>
+ <key>Label</key><string>com.example.instagram-post</string>
+ <key>ProgramArguments</key><array>
+  <string>/ABSOLUTE/PATH/instagram-reels-mcp/.venv/bin/python</string>
+  <string>/ABSOLUTE/PATH/instagram-reels-mcp/post_next.py</string>
+ </array>
+ <key>EnvironmentVariables</key><dict>
+  <key>IG_USER_ID</key><string>17841XXXXXXXXXXXX</string>
+  <key>IG_SCHEDULE</key><string>/ABSOLUTE/PATH/instagram-reels-mcp/schedule.json</string>
+ </dict>
+ <key>StartCalendarInterval</key><array>
+  <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer></dict>
+  <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+  <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>0</integer></dict>
+ </array>
+ <key>StandardOutPath</key><string>/ABSOLUTE/PATH/instagram-reels-mcp/post.log</string>
+ <key>StandardErrorPath</key><string>/ABSOLUTE/PATH/instagram-reels-mcp/post.log</string>
+</dict></plist>

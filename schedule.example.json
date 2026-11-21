@@ -1,0 +1,14 @@
+[
+ {
+  "n": 1,
+  "file": "/absolute/path/to/reels/01-first-clip.mp4",
+  "caption": "First line is the hook\n\nOne line about the clip.\n\n#hashtag1 #hashtag2 #hashtag3",
+  "status": "todo"
+ },
+ {
+  "n": 2,
+  "file": "/absolute/path/to/reels/02-second-clip.mp4",
+  "caption": "Second Reel caption\n\n#hashtag1 #hashtag2",
+  "status": "todo"
+ }
+]
